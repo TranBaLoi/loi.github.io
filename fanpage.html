@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanpage - Quản lý sinh viên</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/style_fanpage.css">
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+            <a href="#myPage" class="navbar-brand">
+                <img src="https://ptit.edu.vn/wp-content/uploads/2024/05/logo-ptit-1.svg" class="w-75" alt="Ptit Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#myPage">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#news">Tin tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Liên hệ</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            MORE
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="moreDropdown">
+                            <li><a class="dropdown-item" href="#">Merchandise</a></li>
+                            <li><a class="dropdown-item" href="#">Extras</a></li>
+                            <li><a class="dropdown-item" href="#">Media</a></li>
+                        </ul>
+                    </li> -->
+                    <!-- <li class="nav-item ">
+                        <a class="nav-link" href="#myPage"><strong>Đăng ký</strong></a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/index.php"><strong>Đăng nhập</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class='bx bx-search-alt-2'></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- SlideBar -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" id="mySlider">
+            <div class="carousel-item active">
+                <img src="https://ptit.edu.vn/wp-content/uploads/2025/03/1958x745-1.png" alt="Slide 1" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Chào mừng đến với hệ thống</h5>
+                    <h3>Quản lý sinh viên PTIT</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/487308573_1098822788954712_4813788927352473350_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeHUJizK8RC5xtklrC5rNeZWLmyCapmX6UYubIJqmZfpRtNjdX7ZjlH6EZZVCof-OF3qFKdhcHqwJRdsfEfe34Mb&_nc_ohc=g3rTtOG-NkMQ7kNvwE8mdi3&_nc_oc=Adlr0vVoAgpYJfaO3jjxTOo5wRu0tpPD86D42Wu_bQ8r4TYeNr7wSl_FCQEssTyooLo&_nc_zt=23&_nc_ht=scontent.fhan2-3.fna&_nc_gid=ohQg1jPFZ0zvFaZbyyjI0Q&oh=00_AfEAR4jNFduaHy_z1o8ANLpGKaICC5F-dNgJrcUCF2nzHA&oe=68017A5B" alt=" Slide 1" class="d-block img-fluid">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Chào mừng đến với hệ thống</h5>
+                    <h3>Quản lý sinh viên PTIT</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/484298927_1084792320357759_6322161908578888749_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeFpf92CJc6bXPHCQay0CY_8SfbuRK5KmTNJ9u5ErkqZM0BLB10kz-TBO4pUpgjI5-rvsGlfGPa3p5yxZfn4jvD9&_nc_ohc=3iipGzyMT0kQ7kNvwEjWGW2&_nc_oc=AdmnFGfs6axEwFEJ1aowkbzeTR4s9TcrkEJYebs_OpI_9SC4PP5eQXK9TJY9XDSWuQk&_nc_zt=23&_nc_ht=scontent.fhan2-4.fna&_nc_gid=0elrMfQKJ7JbSNb8mrqVlw&oh=00_AfHTVntQwUnK1f8sIjy4FqMpwU_QZouT2EttCVDm_8rokg&oe=68016377" alt=" Slide 1" class="d-block img-fluid">
+                <div class="carousel-caption  d-none d-md-block">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Trước</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sau</span>
+            </button>
+        </div>
+    </div>
+    <!-- Nội dung chính -->
+    <div id="about" class="container p-5 text-center">
+        <h1 class="text-danger">GIỚI THIỆU</h1>
+        <p><em>Học viện Công nghệ Bưu Chính Viễn Thông - PTIT</em></p>
+        <p>Hệ thống Quản lý Sinh viên PTIT là nền tảng công nghệ hiện đại, được phát triển để số hóa toàn diện công tác quản lý và hỗ trợ hoạt động đào tạo tại Học viện Công nghệ Bưu chính Viễn thông. Với giao diện thân thiện và bảo mật cao, hệ thống tích hợp đầy đủ các chức năng từ quản lý hồ sơ sinh viên, đăng ký học phần, theo dõi kết quả học tập đến các dịch vụ hành chính như xin giấy chứng nhận, đăng ký ký túc xá.
+
+            Đặc biệt, hệ thống áp dụng các công nghệ tiên tiến như AI trong phân tích học tập, điểm danh bằng nhận diện khuôn mặt, cùng hệ thống báo cáo thông minh giúp nhà trường có cái nhìn tổng quan về chất lượng đào tạo. Qua đó, PTIT không chỉ nâng cao hiệu quả quản lý mà còn mang đến trải nghiệm tối ưu cho sinh viên, góp phần xây dựng môi trường giáo dục thông minh, hiện đại trong kỷ nguyên số.
+
+            "Ứng dụng công nghệ - Nâng tầm quản lý - Phát triển tương lai"
+        </p>
+        <br>
+        <!-- Tính năng -->
+        <div class="row">
+
+            <div class="col-md-4">
+                <p class="text-center"><strong class="text-danger">QUẢN LÝ THÔNG TIN SINH VIÊN</strong></p><br>
+                <a href="#feature1" data-bs-toggle="collapse">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2922/2922506.png" class="rounded-circle" alt="Quản lý sinh viên" width="255" height="255">
+                </a>
+                <div id="feature1" class="collapse mt-3">
+                    <p>✔️ Lưu trữ hồ sơ điện tử toàn diện</p>
+                    <p>✔️ Theo dõi quá trình học tập từng sinh viên</p>
+                    <p>✔️ Quản lý thông tin cá nhân, liên lạc</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <p class="text-center"><strong class="text-danger">QUẢN LÝ HỌC TẬP</strong></p><br>
+                <a href="#feature2" data-bs-toggle="collapse">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732600.png" class="rounded-circle" alt="Quản lý học tập" width="255" height="255">
+                </a>
+                <div id="feature2" class="collapse mt-3">
+                    <p>✔️ Đăng ký môn học trực tuyến</p>
+                    <p>✔️ Theo dõi điểm số, kết quả học tập</p>
+                    <p>✔️ Cảnh báo học vụ tự động</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <p class="text-center"><strong class="text-danger">BÁO CÁO THỐNG KÊ</strong></p><br>
+                <a href="#feature3" data-bs-toggle="collapse">
+                    <img src="https://cdn-icons-png.flaticon.com/512/921/921591.png" class="rounded-circle" alt="Báo cáo thống kê" width="255" height="255"
+                        style="object-fit: cover;">
+                </a>
+                <div id="feature3" class="collapse mt-3">
+                    <p>✔️ Tổng hợp kết quả học tập theo lớp/khoa</p>
+                    <p>✔️ Phân tích chất lượng đào tạo</p>
+                    <p>✔️ Xuất báo cáo đa dạng định dạng</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tin tức -->
+    <div id="news" class="container-fluid bg-danger mt-5 text-light">
+        <div class="container p-5 text-center">
+            <h1 class="mb-4">Tin Tức Hệ Thống</h1>
+            <p class="lead">Cập nhật những tin tức mới nhất về hệ thống quản lý sinh viên</p>
+        </div>
+
+        <div class="container pb-5">
+            <!-- Danh sách các sự kiện gần đây -->
+            <ul class="list-group mb-4">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Tháng 5/2025: Thông báo tháng 5 về việc tổ chức hội thảo hướng dẫn sử dụng hệ thống quản lý sinh viên.
+                    <span class="badge bg-success rounded-pill">Mới nhất</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Tháng 4/2025: Thông báo tháng 4 về việc tổ chức hội thảo hướng dẫn sử dụng hệ thống quản lý sinh viên.
+                    <span class="badge bg-secondary rounded-pill">Đã cập nhật</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Tháng 3/2025: Thông báo tháng 3 về việc tổ chức hội thảo hướng dẫn sử dụng hệ thống quản lý sinh viên.
+                    <span class="badge bg-secondary rounded-pill">Đã cập nhật</span>
+                </li>
+            </ul>
+
+            <!-- Các tin tức nổi bật -->
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 rounded-5">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1548/1548723.png" class="card-img-top thumbnail img-fluid mx-auto mt-2" alt="Giao diện mới" style="width: 75%; height: 75%; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Ra mắt giao diện mới</h5>
+                            <p class="card-text">Hệ thống vừa cập nhật giao diện thân thiện hơn, dễ sử dụng hơn cho cả sinh viên và giảng viên.</p>
+                            <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#newsModal1">Xem chi tiết</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 rounded-5">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1933/1933975.png" class="card-img-top thumbnail img-fluid mx-auto mt-2" alt="Tính năng mới" style="width: 70%; height: 70%; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Bổ sung tính năng quản lý học phí</h5>
+                            <p class="card-text">Giờ đây nhà trường có thể quản lý học phí và sinh viên có thể thanh toán trực tuyến qua hệ thống.</p>
+                            <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#newsModal2">Xem chi tiết</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 rounded-5">
+                        <img src="https://cdn-icons-png.flaticon.com/512/11506/11506411.png" class="card-img-top thumbnail img-fluid mx-auto mt-2" alt="Hội thảo" style="width: 70%; height: 70%; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Hội thảo hướng dẫn sử dụng hệ thống</h5>
+                            <p class="card-text">Tham gia hội thảo trực tuyến ngày 15/10 để được hướng dẫn chi tiết về các tính năng mới.</p>
+                            <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#newsModal3">Đăng ký tham gia</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-5" id="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h6 class=" mb-4">HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG</h6>
+                    <p><i class='bx bx-map'></i>Km10, Đường Nguyễn Trãi, Q. Hà Đông, Hà Nội</p>
+                    <p><i class='bx bx-phone'></i> Điện thoại: (024) 1111 111</p>
+                    <p><i class='bx bx-envelope'></i> Email: contact@ptit.edu.vn</p>
+                    <p><i class='bx bx-podcast'></i> Website: <a class="text-black" href="https://ptit.edu.vn"> https://ptit.edu.vn</a> </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.582063344743!2d105.78477287512776!3d20.980757430656528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135accdd8a1ad71%3A0xa2f9b16036648187!2zSOG7jWMgdmnhu4duIEPDtG5nIG5naOG7hyBCxrB1IGNow61uaCB2aeG7hW4gdGjDtG5n!5e1!3m2!1svi!2s!4v1744641460935!5m2!1svi!2s" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Hệ thống</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a class="text-black" href="#!"><i class='bx bx-home-alt-2'></i> Trang chủ</a></li>
+                        <li class="mb-2"><a class="text-black" href="#!"><i class='bx bx-home-alt-2'></i> Quản lý sinh viên</a></li>
+                    </ul>
+                    <h5 class="text-uppercase mb-4">Fanpage</h5>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FHocvienPTIT&tabs=timeline&width=340&height=331&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="350" height="285" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Hướng dẫn sử dụng</h5>
+                    <iframe width="350" height="250" src="https://www.youtube.com/embed/y7Y7VtKb9rY?si=qtemRMK1KoB_zr8X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <h5 class="text-uppercase mt-4 mb-3">Liên hệ hỗ trợ</h5>
+                    <p><i class='bx bxs-phone'></i> Hotline: 1900 1234</p>
+                    <p><i class='bx bx-time'></i> Giờ làm việc: 8:00 - 17:00 (T2-T6)</p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="copyright py-3 mt-4">
+            <div class="container text-center">
+                <h5 class="mb-0">© 2024 Bản quyền thuộc về Trần Bá Lợi</h5>
+                <p class="mb-0">Hệ thống Quản lý Sinh viên phiên bản 2.0</p>
+            </div>
+        </div>
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+            var Tawk_API = Tawk_API || {},
+                Tawk_LoadStart = new Date();
+            (function() {
+                var s1 = document.createElement("script"),
+                    s0 = document.getElementsByTagName("script")[0];
+                s1.async = true;
+                s1.src = 'https://embed.tawk.to/67e9ff536b53801912f91bc6/1inl0qnr3';
+                s1.charset = 'UTF-8';
+                s1.setAttribute('crossorigin', '*');
+                s0.parentNode.insertBefore(s1, s0);
+            })();
+        </script>
+        <!--End of Tawk.to Script-->
+    </footer>
+
+
+</body>
+
+</html>
